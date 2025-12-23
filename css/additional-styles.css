@@ -1,0 +1,962 @@
+/* ============================================
+   ADDITIONAL STYLES FOR MULTI-PAGE STRUCTURE
+   Summary, Option A/B/C, Equipment Tables, AI Crew
+   ============================================ */
+
+/* === Breadcrumb Navigation === */
+.breadcrumb {
+    background: var(--bg-light);
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+    margin-top: 80px;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-red);
+}
+
+.breadcrumb span {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* === Page Header === */
+.page-header {
+    background: linear-gradient(135deg, var(--deep-red) 0%, var(--primary-red) 100%);
+    color: white;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.page-header .option-label {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.page-header .option-label.recommended {
+    background: var(--accent-gold);
+    color: var(--deep-red);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.page-header .tagline {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 32px;
+}
+
+.option-meta {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    font-size: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* === Summary Options === */
+.summary-options {
+    padding: var(--section-padding) 0;
+}
+
+.summary-card {
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 48px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-red);
+    position: relative;
+}
+
+.summary-card.foundation {
+    border-left-color: #dc2626;
+}
+
+.summary-card.professional {
+    border-left-color: #059669;
+}
+
+.summary-card.platform {
+    border-left-color: #7c3aed;
+}
+
+.recommended-badge {
+    position: absolute;
+    top: -12px;
+    right: 32px;
+    background: var(--accent-gold);
+    color: var(--deep-red);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.summary-header {
+    margin-bottom: 32px;
+}
+
+.option-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-red);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 16px;
+}
+
+.summary-card h2 {
+    display: inline;
+    font-size: 2rem;
+}
+
+.summary-investment {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    padding: 24px;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.summary-investment .price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-red);
+}
+
+.summary-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.summary-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.summary-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary-content li {
+    padding: 8px 0 8px 24px;
+    position: relative;
+}
+
+.summary-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-red);
+    font-weight: 700;
+}
+
+.summary-content .dont-get li:before {
+    content: "×";
+    color: #dc2626;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.details-button:hover {
+    background: var(--deep-red);
+    transform: translateY(-2px);
+}
+
+.details-button.primary {
+    background: #7c3aed;
+}
+
+.details-button.primary:hover {
+    background: #6d28d9;
+}
+
+.partnership-note {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-top: 16px;
+}
+
+/* === The Ugly Section === */
+.the-ugly {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+    padding: var(--section-padding) 0;
+}
+
+.the-ugly h2 {
+    color: white;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.ugly-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ugly-content .lead {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.ugly-content p {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.ugly-content ul {
+    margin: 16px 0 16px 32px;
+}
+
+.ugly-content li {
+    margin-bottom: 8px;
+}
+
+.foundation-work {
+    background: rgba(220, 38, 38, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    margin: 24px 0;
+    border-left: 4px solid var(--primary-red);
+}
+
+.foundation-work h3 {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.conclusion {
+    font-size: 1.25rem;
+    margin-top: 24px;
+}
+
+.conclusion.final {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+/* === Option Overview === */
+.option-overview {
+    padding: var(--section-padding) 0;
+    background: var(--bg-light);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.overview-column h2 {
+    margin-bottom: 24px;
+}
+
+.overview-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overview-column li {
+    padding: 12px 0 12px 32px;
+    position: relative;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.overview-column li:last-child {
+    border-bottom: none;
+}
+
+.overview-column.get li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-red);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.overview-column.dont-get li:before,
+.overview-column li.tradeoffs-list:before {
+    content: "⚠";
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-size: 1.2rem;
+}
+
+/* === Equipment Tables === */
+.equipment-section {
+    padding: var(--section-padding) 0;
+}
+
+.equipment-site {
+    margin-bottom: 64px;
+}
+
+.equipment-site h3 {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+}
+
+.site-note {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.equipment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-table thead {
+    background: var(--deep-red);
+    color: white;
+}
+
+.equipment-table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.equipment-table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.equipment-table tr:last-child td {
+    border-bottom: none;
+}
+
+.equipment-table tr:hover {
+    background: var(--bg-light);
+}
+
+.spec-detail {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.equipment-table tr.subtotal {
+    background: var(--bg-light);
+    font-weight: 700;
+}
+
+.equipment-table tr.total {
+    background: var(--deep-red);
+    color: white;
+}
+
+.equipment-table tr.total td {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.total-investment {
+    margin-top: 48px;
+}
+
+.upgrade-note,
+.config-note,
+.roi-note {
+    margin-top: 16px;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* === NOC Benefits === */
+.noc-benefits {
+    padding: var(--section-padding) 0;
+    background: var(--bg-light);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3 {
+    color: var(--primary-red);
+    margin-bottom: 16px;
+}
+
+.stakeholder-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.stakeholder {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.stakeholder h4 {
+    color: var(--primary-red);
+    margin-bottom: 16px;
+}
+
+/* === Supplier Section === */
+.supplier-section {
+    padding: var(--section-padding) 0;
+    background: var(--bg-light);
+}
+
+.supplier-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.supplier-card {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.supplier-card h3 {
+    margin-bottom: 16px;
+}
+
+.supplier-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.supplier-card li {
+    padding: 8px 0;
+}
+
+.supplier-card a {
+    color: var(--primary-red);
+    text-decoration: none;
+}
+
+.supplier-card a:hover {
+    text-decoration: underline;
+}
+
+.discount-note {
+    margin-top: 16px;
+    padding: 16px;
+    background: var(--bg-light);
+    border-left: 4px solid var(--accent-gold);
+    font-size: 0.95rem;
+}
+
+.procurement-note {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    margin-top: 32px;
+    border-left: 4px solid var(--primary-red);
+}
+
+.procurement-note h3 {
+    margin-bottom: 16px;
+}
+
+.procurement-note p {
+    margin-bottom: 12px;
+}
+
+.supplier-note {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+/* === Timeline Section === */
+.timeline-section {
+    padding: var(--section-padding) 0;
+}
+
+.timeline-phases {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.phase {
+    background: white;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.phase-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-red);
+    color: white;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 16px;
+}
+
+.phase h3 {
+    margin-bottom: 16px;
+    color: var(--primary-red);
+}
+
+.timeline-note {
+    margin-top: 32px;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* === Future Capability === */
+.future-capability {
+    padding: var(--section-padding) 0;
+    background: var(--bg-light);
+}
+
+.capability-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.capability-item {
+    background: white;
+    padding: 16px 24px;
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-gold);
+}
+
+.foundation-note {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* === Vision Section (Option C) === */
+.vision-section {
+    padding: var(--section-padding) 0;
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    color: white;
+}
+
+.vision-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.vision-header h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.vision-intro {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* === AI Crew === */
+.ai-crew {
+    margin-bottom: 64px;
+}
+
+.ai-crew h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.crew-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 48px;
+    opacity: 0.9;
+}
+
+.crew-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.crew-member {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 32px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.crew-header {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.crew-header h4 {
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 4px;
+}
+
+.crew-role {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.crew-member > p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.crew-capabilities {
+    list-style: none;
+    padding: 0;
+}
+
+.crew-capabilities li {
+    padding: 6px 0 6px 24px;
+    position: relative;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.crew-capabilities li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}
+
+/* === Vision Scenarios === */
+.vision-scenarios {
+    margin-bottom: 64px;
+}
+
+.vision-scenarios h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.scenario {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.scenario h4 {
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.scenario-question {
+    font-style: italic;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.scenario-answer {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* === Operational Benefits (Option C) === */
+.operational-benefits {
+    margin-bottom: 64px;
+}
+
+.operational-benefits h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.solves-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.solves-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.solves-item h4 {
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+}
+
+.solves-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* === Competitive Advantage === */
+.competitive-advantage {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 48px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.competitive-advantage h3 {
+    font-size: 1.75rem;
+    color: var(--accent-gold);
+    margin-bottom: 24px;
+}
+
+.competitive-advantage p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.competitive-advantage ul {
+    margin: 24px 0 24px 32px;
+}
+
+.competitive-advantage li {
+    margin-bottom: 12px;
+}
+
+/* === PDF Section === */
+.pdf-section {
+    padding: var(--section-padding) 0;
+    background: var(--bg-light);
+}
+
+.pdf-card {
+    background: white;
+    padding: 48px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pdf-card h2 {
+    margin-bottom: 16px;
+}
+
+.pdf-card p {
+    margin-bottom: 24px;
+}
+
+.pdf-button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pdf-button:hover {
+    background: var(--deep-red);
+    transform: translateY(-2px);
+}
+
+.pdf-note {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* === Option Navigation === */
+.option-navigation {
+    padding: 40px 0;
+    background: var(--bg-light);
+    border-top: 1px solid #e5e7eb;
+}
+
+.nav-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-option {
+    padding: 14px 28px;
+    background: white;
+    color: var(--primary-red);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 2px solid var(--primary-red);
+    transition: all 0.3s ease;
+}
+
+.nav-option:hover {
+    background: var(--primary-red);
+    color: white;
+}
+
+.nav-option.back {
+    margin-right: auto;
+}
+
+.nav-option.next {
+    margin-left: auto;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 968px) {
+    .overview-grid,
+    .summary-content,
+    .supplier-grid,
+    .stakeholder-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid,
+    .crew-grid,
+    .scenario-grid,
+    .solves-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-phases {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .vision-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .benefits-grid,
+    .crew-grid,
+    .scenario-grid,
+    .solves-grid,
+    .timeline-phases,
+    .capability-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .option-meta {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .summary-investment {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-options {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-option.back,
+    .nav-option.next {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .equipment-table {
+        font-size: 0.9rem;
+    }
+
+    .equipment-table th,
+    .equipment-table td {
+        padding: 12px 8px;
+    }
+}
