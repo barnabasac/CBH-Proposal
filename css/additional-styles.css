@@ -534,7 +534,7 @@
 
 /* === The Ugly Section === */
 .the-ugly {
-    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    background: linear-gradient(135deg, var(--italian-green) 0%, #007a3d 100%);
     color: white;
     padding: var(--section-padding) 0;
 }
