@@ -417,6 +417,31 @@
     color: var(--primary-red);
 }
 
+/* The Bad Section */
+.bad-section {
+    text-align: center;
+    margin: 32px 0;
+    padding: 24px;
+    background: rgba(220, 38, 38, 0.05);
+    border-radius: 8px;
+    border: 2px solid rgba(220, 38, 38, 0.2);
+}
+
+.bad-title {
+    font-size: 1.75rem;
+    color: var(--primary-red);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.bad-reason {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 0;
+    font-style: italic;
+}
+
 .summary-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
