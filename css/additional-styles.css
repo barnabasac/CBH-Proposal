@@ -1243,6 +1243,34 @@
 }
 
 /* === Responsive Adjustments === */
+
+/* Contact Section */
+.contact {
+    background: var(--bg-dark);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: white;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contact-details {
+    color: white;
+}
+
+.contact-details p {
+    color: white;
+}
+
+/* === Responsive Adjustments === */
 @media (max-width: 968px) {
     .overview-grid,
     .summary-content,
