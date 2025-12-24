@@ -164,8 +164,8 @@ ul {
 
 .hero-label {
     display: inline-block;
-    background: rgba(245, 158, 11, 0.2);
-    color: var(--accent-gold);
+    background: white;
+    color: var(--italian-green);
     padding: 8px 20px;
     border-radius: 30px;
     font-size: 0.85rem;
@@ -173,7 +173,7 @@ ul {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 24px;
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    border: 1px solid var(--deep-red);
 }
 
 .hero h1 {
