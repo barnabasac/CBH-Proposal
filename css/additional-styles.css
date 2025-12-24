@@ -2,7 +2,26 @@
    ADDITIONAL STYLES FOR MULTI-PAGE STRUCTURE
    Summary, Option A/B/C, Equipment Tables, AI Crew
    ============================================ */
+/* === Hero Button === */
+.hero-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--deep-red) 100%);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(176, 38, 45, 0.3);
+}
 
+.hero-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(176, 38, 45, 0.4);
+    background: linear-gradient(135deg, var(--deep-red) 0%, var(--primary-red) 100%);
+}
 /* === Breadcrumb Navigation === */
 .breadcrumb {
     background: var(--bg-light);
