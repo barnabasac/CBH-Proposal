@@ -877,6 +877,33 @@ ul {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.roi-breakdown {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roi-breakdown p {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.roi-breakdown strong {
+    color: var(--accent-gold);
+    font-weight: 700;
+}
+
+.roi-breakdown .roi-note {
+    border-top: none;
+    padding-top: 8px;
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
     .roi-box {
         padding: 32px 24px;
@@ -986,6 +1013,55 @@ ul {
 
 .pillar-example em {
     font-style: normal;
+}
+
+/* Italian Crew Outcome Table (inside Pillar 3) */
+.crew-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.9rem;
+    background: var(--bg-light);
+}
+
+.crew-table thead {
+    background: var(--italian-green);
+    color: white;
+}
+
+.crew-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.crew-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.crew-table tbody tr:hover {
+    background: white;
+}
+
+.crew-table strong {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .crew-table {
+        font-size: 0.85rem;
+    }
+    
+    .crew-table th,
+    .crew-table td {
+        padding: 8px;
+    }
 }
 
 /* Partnership Model Section */
