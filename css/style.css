@@ -12,10 +12,11 @@
 
 :root {
     /* Casa Bianca Brand Colors */
-    --primary-red: #dc2626;
-    --deep-red: #991b1b;
-    --accent-gold: #f59e0b;
-    --warm-gold: #d97706;
+    --primary-red: #dc2626;      /* rgb(220, 38, 38) */
+    --deep-red: #991b1b;         /* rgb(153, 27, 27) */
+    --italian-green: #009246;    /* rgb(0, 146, 70) - Italian flag green */
+    --accent-gold: #f59e0b;      /* rgb(245, 158, 11) */
+    --warm-gold: #d97706;        /* rgb(217, 119, 6) */
     
     /* Neutrals */
     --text-primary: #1a1a1a;
@@ -231,6 +232,10 @@ ul {
     font-size: 1.5rem;
     margin-bottom: 12px;
     color: var(--primary-red);
+}
+
+.partnership-point .partnership-title {
+    color: var(--italian-green);
 }
 
 .partnership-point p {
