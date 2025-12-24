@@ -564,47 +564,66 @@
     margin: 0 auto;
 }
 
-.ugly-content .lead {
-    font-size: 1.5rem;
+/* Ugly Section Boxes */
+.ugly-box {
+    margin-bottom: 32px;
+    padding: 32px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ugly-box.white-box {
+    background: white;
+    color: var(--text-primary);
+}
+
+.ugly-box.white-box h3 {
+    color: var(--primary-red);
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+
+.ugly-box.white-box p {
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.ugly-box.white-box .box-lead {
+    font-size: 1.4rem;
     font-weight: 700;
+    color: var(--primary-red);
     margin-bottom: 16px;
 }
 
-.ugly-content p {
-    margin-bottom: 16px;
-    font-size: 1.1rem;
+.ugly-box.white-box ul {
+    margin: 16px 0 8px 24px;
+    color: var(--text-primary);
 }
 
-.ugly-content ul {
-    margin: 16px 0 16px 32px;
-}
-
-.ugly-content li {
+.ugly-box.white-box li {
     margin-bottom: 8px;
+    color: var(--text-primary);
 }
 
-.foundation-work {
-    background: rgba(220, 38, 38, 0.1);
-    padding: 24px;
-    border-radius: 8px;
-    margin: 24px 0;
-    border-left: 4px solid var(--primary-red);
+.ugly-box.red-box {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--deep-red) 100%);
+    color: white;
+    text-align: center;
 }
 
-.foundation-work h3 {
+.ugly-box.red-box p {
     color: white;
     margin-bottom: 16px;
 }
 
-.conclusion {
-    font-size: 1.25rem;
-    margin-top: 24px;
+.ugly-box.red-box .conclusion-text {
+    font-size: 1.3rem;
 }
 
-.conclusion.final {
-    font-size: 1.5rem;
-    font-weight: 700;
+.ugly-box.red-box .conclusion-final {
+    font-size: 1.6rem;
     color: var(--accent-gold);
+    margin: 0;
 }
 
 /* === Option Overview === */
