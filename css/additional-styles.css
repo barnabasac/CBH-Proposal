@@ -340,6 +340,13 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* When used in The Ugly section, match box width */
+.the-ugly .italian-red-title {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+}
+
 .tagline-white {
     color: white !important;
     font-size: 1.5rem;
