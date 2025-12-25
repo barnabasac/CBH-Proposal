@@ -1020,8 +1020,9 @@ ul {
     width: 100%;
     border-collapse: collapse;
     margin: 24px 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     background: var(--bg-light);
+    table-layout: fixed;
 }
 
 .crew-table thead {
@@ -1030,19 +1031,24 @@ ul {
 }
 
 .crew-table th {
-    padding: 12px;
+    padding: 10px 8px;
     text-align: left;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
+.crew-table th:nth-child(1) { width: 20%; }
+.crew-table th:nth-child(2) { width: 35%; }
+.crew-table th:nth-child(3) { width: 45%; }
+
 .crew-table td {
-    padding: 12px;
+    padding: 10px 8px;
     border-bottom: 1px solid #e5e7eb;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 0.85rem;
 }
 
 .crew-table tbody tr:hover {
