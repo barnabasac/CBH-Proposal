@@ -66,22 +66,22 @@
 }
 
 .aywd-compact-promise {
-    background: linear-gradient(135deg, var(--italian-red), var(--dark-red));
-    padding: 40px;
+    background: white;
+    padding: 30px;
     border-radius: 12px;
-    color: white;
-    text-align: center;
+    border: 2px solid #fee2e2;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.1);
 }
 
 .aywd-compact-promise h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--accent-gold);
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .aywd-compact-promise p {
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 15px;
 }
