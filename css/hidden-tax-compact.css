@@ -23,7 +23,7 @@
 
 .saas-compact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 40px;
 }
@@ -90,11 +90,13 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .saas-compact-grid {
         grid-template-columns: 1fr;
     }
-    
+}
+
+@media (max-width: 768px) {
     .hidden-tax-section {
         padding: 60px 0;
     }
