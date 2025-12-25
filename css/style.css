@@ -915,7 +915,72 @@ ul {
     }
 }
 
-/* Solution Pillars Section */
+/* === Why Now Section === */
+.why-now-section {
+    background: var(--bg-light);
+    padding: var(--section-padding) 0;
+}
+
+.industry-reality-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 6px solid var(--primary-red);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 48px;
+}
+
+.reality-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.reality-stat {
+    padding: 16px;
+    background: var(--bg-light);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-gold);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.reality-stat strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.the-choice-box {
+    background: white;
+    padding: 48px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 48px;
+}
+
+.usp-statement {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid var(--italian-green);
+    box-shadow: 0 4px 12px rgba(0, 146, 70, 0.1);
+}
+
+@media (max-width: 768px) {
+    .reality-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .industry-reality-box,
+    .the-choice-box,
+    .usp-statement {
+        padding: 24px;
+    }
+}
+
+/* === Solution Pillars Section === */
 .solution-pillars {
     background: var(--bg-light);
     padding: var(--section-padding) 0;
