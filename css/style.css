@@ -141,8 +141,8 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    /* Subtle darkening for text readability */
-    background: rgba(0, 0, 0, 0.35);
+    /* No overlay - let the flag colors show true */
+    background: transparent;
     pointer-events: none;
 }
 
@@ -159,7 +159,7 @@ ul {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
+    color: var(--text-primary);
     max-width: 900px;
     padding: 0 24px;
 }
@@ -179,14 +179,14 @@ ul {
 }
 
 .hero h1 {
-    color: white;
+    color: var(--text-primary);
     margin-bottom: 24px;
     font-weight: 800;
 }
 
 .hero-subtitle {
     font-size: clamp(1.1rem, 2vw, 1.3rem);
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-secondary);
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.5;
