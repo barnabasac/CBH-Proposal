@@ -432,6 +432,16 @@
     background: var(--bg-light);
 }
 
+.noc-benefits h2 {
+    text-align: left;
+}
+
+.noc-benefits .section-intro {
+    text-align: left !important;
+    margin-left: 0;
+    margin-right: auto;
+}
+
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
