@@ -250,7 +250,7 @@ ul {
 .section-intro {
     text-align: left !important;
     max-width: 700px;
-    margin: 0 auto 64px;
+    margin: 0 0 64px 0;
     font-size: 1.1rem;
     color: var(--text-secondary);
 }
