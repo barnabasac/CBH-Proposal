@@ -961,23 +961,30 @@
     }
 }
 
-/* Option Card Links */
+/* Option Card CTA */
+.option-cta {
+    padding: 20px 32px 32px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: auto;
+}
+
 .option-link {
     display: inline-block;
-    margin-top: 16px;
-    padding: 12px 24px;
+    padding: 14px 32px;
     background: var(--accent-gold);
     color: var(--bg-dark);
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-family: 'Lora', Georgia, serif;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
 }
 
 .option-link:hover {
     background: var(--warm-gold);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);
 }
