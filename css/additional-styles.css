@@ -334,6 +334,15 @@
 /* === Equipment Tables === */
 .equipment-section {
     padding: var(--section-padding) 0;
+    text-align: left;
+}
+
+.equipment-section h2 {
+    text-align: center;
+}
+
+.equipment-section .section-intro {
+    text-align: left;
 }
 
 .equipment-site {
