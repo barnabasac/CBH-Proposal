@@ -342,7 +342,7 @@
 }
 
 .equipment-section .section-intro {
-    text-align: left;
+    text-align: left !important;
 }
 
 .equipment-site {
