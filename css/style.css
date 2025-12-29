@@ -125,7 +125,11 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--deep-red) 0%, var(--primary-red) 100%);
+    /* Italian Flag - vertical stripes */
+    background: linear-gradient(90deg, 
+        #009246 0%, #009246 33.33%, 
+        #ffffff 33.33%, #ffffff 66.66%, 
+        #ce2b37 66.66%, #ce2b37 100%);
     margin-top: 70px;
     overflow: hidden;
 }
@@ -137,9 +141,8 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(245, 158, 11, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(217, 119, 6, 0.2) 0%, transparent 50%);
+    /* Subtle darkening for text readability */
+    background: rgba(0, 0, 0, 0.35);
     pointer-events: none;
 }
 
@@ -149,7 +152,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: transparent;
 }
 
 .hero-content {
