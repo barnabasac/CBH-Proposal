@@ -338,7 +338,7 @@
 }
 
 .equipment-section h2 {
-    text-align: center;
+    text-align: left;
 }
 
 .equipment-section .section-intro {
@@ -485,6 +485,14 @@
     background: var(--bg-light);
 }
 
+.supplier-section h2 {
+    text-align: left;
+}
+
+.supplier-section .intro-text {
+    text-align: left;
+}
+
 .supplier-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -557,6 +565,14 @@
     padding: var(--section-padding) 0;
 }
 
+.timeline-section h2 {
+    text-align: left;
+}
+
+.timeline-section .intro-text {
+    text-align: left;
+}
+
 .timeline-phases {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -602,6 +618,10 @@
 .future-capability {
     padding: var(--section-padding) 0;
     background: var(--bg-light);
+}
+
+.future-capability h2 {
+    text-align: left;
 }
 
 .capability-grid {
