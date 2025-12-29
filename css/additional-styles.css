@@ -554,15 +554,17 @@
 }
 
 .phase-number {
-    width: 50px;
-    height: 50px;
+    display: inline-block;
     background: var(--primary-red);
     color: white;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 1.5rem;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 0.9rem;
     font-weight: 700;
     margin: 0 auto 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
 .phase h3 {
