@@ -1,147 +1,107 @@
 # Casa Bianca Holdings - ITTS Proposal Website
 
-**Status:** Ready for local preview, needs GitHub deployment setup
+**Live Site:** https://barnabasac.github.io/CBH-Proposal/  
+**Repository:** https://github.com/barnabasac/CBH-Proposal  
+**Last Updated:** December 2025
 
 ---
 
-## 🎯 What's Built
+## 🎯 Purpose
 
-Professional proposal website presenting three investment options for Casa Bianca's ITTS platform:
+Professional proposal website presenting the ITTS (Integrated Technical & Tactical Systems) platform partnership opportunity for Casa Bianca Holdings — a six-site Italian restaurant group.
 
-- **Option A:** The Foundation (£4,800-6,400, 4-5 weeks)
-- **Option B:** The Professional (£7,000-9,500, 6-8 weeks)  
-- **Option C:** The Platform (£15,000-22,000, 12 weeks) ← Recommended
+**Framing:** Partnership Pilot, not vendor-client. Joint R&D where both parties benefit.
 
 ---
 
 ## 📁 File Structure
 
 ```
-Website/
-├── index.html          # Main proposal page
+CBH-Proposal/
+├── index.html          # Landing page (hero, partnership, current state, timeline, contact)
+├── summary.html        # Three-option comparison + "The Ugly" reality section
+├── option-a.html       # Foundation CCTV detail page
+├── option-b.html       # Professional infrastructure detail page
+├── option-c.html       # Complete platform detail page
 ├── css/
-│   └── style.css       # Italian restaurant aesthetic styling
+│   ├── style.css              # Base styles, typography, layout
+│   └── additional-styles.css  # Multi-page components (breadcrumb, network diagram, state cards)
 └── README.md           # This file
 ```
 
 ---
 
-## 🎨 Design Features
+## 💰 Investment Options
 
-**Visual Style:**
-- Italian restaurant aesthetic (warm reds, golds)
-- Professional but approachable tone
-- Partnership framing throughout
-- Mobile responsive
-- Clean typography (Syne headers, DM Sans body)
+| Option | Name | Equipment Cost | Platform Dev | Total |
+|--------|------|----------------|--------------|-------|
+| **A** | Foundation | £11,061 | — | £11,061 |
+| **B** | Professional | £32,930 | API dashboard | £32,930 |
+| **C** | Complete | £11,061 | £63,800 | £74,861 |
 
-**Key Sections:**
-1. Hero with partnership framing
-2. Partnership philosophy (joint R&D, not vendor)
-3. Three investment options (detailed comparison)
-4. Why It Matters (connectivity, risk, operations)
-5. Timeline & 12-week constraint
-6. Discussion CTA
-
-**Placeholder Images:**
-- Connectivity Reality (red gradient)
-- Risk Understanding (orange gradient)
-- Operational Reality (green gradient)
-- Can replace with actual Casa Bianca site photos later
+**Partnership Model:** CB pays equipment, AYWD builds platform (£40-60k commercial value). Both benefit. "They use us or not" — no lock-in.
 
 ---
 
-## 🚀 Next Steps
+## 🎨 Design System
 
-### 1. **Preview Locally**
-Open `index.html` in your browser to see the site
+**Typography:**
+- Headers: Playfair Display (700 Bold, 800 ExtraBold for hero)
+- Body: Lora (400 Regular, 500 Medium for emphasis)
 
-### 2. **Add Real Images (Optional)**
-Create `images/` folder and add:
-- Casa Bianca site photos (exteriors, interiors)
-- Network equipment shots
-- Or keep placeholder gradients
+**Color Palette:**
+- Primary Red: `#dc2626`
+- Deep Red: `#991b1b`
+- Italian Green: `#009246` (partnership sections)
+- Accent Gold: `#f59e0b`
+- Text Primary: `#1a1a1a`
+- Background Light: `#f9fafb`
+- Background Dark: `#111827`
 
-### 3. **GitHub Deployment**
-Similar to Biba site:
-
-```bash
-# Navigate to Website folder
-cd "G:\My Drive\Clients\Casa Bianca\Projects\ITTS Upgrade\Website"
-
-# Initialize Git repo
-git init
-git add .
-git commit -m "Initial CBH proposal website"
-
-# Create GitHub repo (manually on GitHub.com)
-# Then connect and push:
-git remote add origin https://github.com/YOUR_USERNAME/cbh-proposal.git
-git branch -M main
-git push -u origin main
-
-# Enable GitHub Pages in repo settings
-# Settings > Pages > Source: main branch
-```
-
-### 4. **Share with Team**
-Once deployed, send link to Andreas/Blerim/Alfred:
-"Built a proposal website so you can review the options at your own pace: [URL]"
+**Full branding spec:** See `Website_Branding.pdf` in project files
 
 ---
 
-## 🎯 Content Strategy
+## 🏗️ Sites Covered
 
-**Tone Calibration:**
-- Andreas: Vision + phased approach (enthusiasm management)
-- Blerim: Show don't tell, clear costs (financial conservative)
-- Alfred: CCTV access highlighted in all options
-
-**Key Messages:**
-- ✅ Partnership pilot (not vendor-client)
-- ✅ Three clear options (flexibility)
-- ✅ Honest about trade-offs (risk, connectivity)
-- ✅ 12-week window (urgency without pressure)
-- ✅ "Use us or not" (no lock-in)
+| Code | Site | Priority |
+|------|------|----------|
+| CN | Casa Nova Merthyr | Lounge bar — nothing changes |
+| CBA | Casa Bianca Abergavenny | Camera replacement + audio |
+| CBP | Casa Bianca Pontypridd | Full UniFi conversion candidate |
+| CBU | Casa Bianca Usk | CCTV addition |
+| CBW | Casa Bianca Whitney | WTB CCTV (toll bridge location) |
+| CBM | Casa Bianca Merthyr | UDM SE may swap to |
 
 ---
 
-## 📝 Technical Notes
+## ⏱️ Timeline Constraint
 
-**Fonts:** Google Fonts (Syne, DM Sans)
-**CSS Variables:** Easy theme customization
-**Mobile First:** Responsive breakpoints at 968px, 640px
-**No JavaScript:** Pure HTML/CSS (lightweight, fast)
+**12-week execution window:** December 2025 → March 2026  
+**Hard stop:** March 2026 — seasonal commitments begin
 
 ---
 
-## 🔧 Customization Options
+## 🚀 Deployment
 
-**Colors:** Edit CSS variables in `style.css`:
-```css
-:root {
-    --primary-red: #dc2626;
-    --accent-gold: #f59e0b;
-    /* etc */
-}
-```
+Site deploys automatically via GitHub Pages on push to `master` branch.
 
-**Content:** Edit HTML sections directly
-**Images:** Replace placeholder gradients in `.why-image`
+**To update:**
+1. Edit HTML/CSS files locally
+2. Commit changes
+3. Push to master
+4. Wait ~60 seconds for GitHub Actions to complete
+5. Verify at live URL
 
 ---
 
-## 💡 Design Inspiration
+## 📞 Contact
 
-Adapted from Biba Constructions success:
-- Visual dominance (but with content/options)
-- Clean professional layout
-- Brief compelling copy
-- Real project showcase (adapted to proposals)
+**Robbie Yule — AYWD**  
+Email: robbie@aywd.co.uk  
+Phone: 07500 834556
 
 ---
 
-**Ready to deploy when you are!**
-
-*Built by AYWD × Casa Bianca Partnership*
+*Built by AYWD × Casa Bianca Partnership*  
 *December 2025*

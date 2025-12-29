@@ -1,4 +1,4 @@
-<!-- Rebuild trigger -->
+<!-- Rebuild trigger v2 - 2025-12-28 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/additional-styles.css">
-    <link rel="stylesheet" href="css/hidden-tax-compact.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,9 +23,9 @@
             <span class="nav-logo">AYWD × Casa Bianca</span>
         </div>
         <div class="nav-links">
-            <a href="#current-state">Current State</a>
-            <a href="#partnership">Solution</a>
-            <a href="summary.html">Options</a>
+            <a href="#options">Options</a>
+            <a href="#why">Why It Matters</a>
+            <a href="#timeline">Timeline</a>
             <a href="#contact">Discuss</a>
         </div>
     </nav>
@@ -36,221 +35,273 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <span class="hero-label">Partnership Pilot</span>
-            <h1>Turn Challenges into Clarity<br>Across All Six Sites</h1>
-            <p class="hero-subtitle">Real-time visibility. Unified systems. Automated compliance. Professional infrastructure that reduces stress and operating costs.</p>
+            <h1>Building the future of<br>Casa Bianca operations</h1>
+            <p class="hero-subtitle">Six-site ITTS platform: CCTV, networking, and intelligent operations</p>
+            <a href="summary.html" class="hero-button">View Investment Options →</a>
         </div>
     </section>
 
-    <!-- Current State of Play -->
-    <section id="current-state" class="current-state">
+    <!-- Partnership Introduction -->
+    <section class="partnership">
         <div class="container">
-            <h2>Where Things Stand Today</h2>
-            <p class="section-intro">Before discussing solutions, let's be honest about the current situation across your sites. This isn't alarmist—it's just reality.</p>
-            
-            <div class="state-grid">
-                <div class="state-item">
-                    <h3>No ITTS Documentation</h3>
-                    <p>No infrastructure mapping or legacy documentation exists. <strong>If AYWD leaves, the next IT person starts from zero</strong>. No consistent deployment records, credentials scattered, systems undocumented.</p>
-                </div>
-                
-                <div class="state-item">
-                    <h3>Lost Evidence</h3>
-                    <p>Lost administrator credentials with no recovery method configured means footage exists but <strong>cannot be accessed</strong>. When you need it most, it's unavailable.</p>
-                </div>
-                
-                <div class="state-item">
-                    <h3>No Backup</h3>
-                    <p>Every site records locally only. Fire, theft, or flood at any location means <strong>all footage is permanently lost</strong>. No off-site backup exists.</p>
-                </div>
-                
-                <div class="state-item">
-                    <h3>Fragmented Systems</h3>
-                    <p>Different platforms across sites. No unified monitoring. Every incident requires checking multiple apps, multiple logins, multiple systems.</p>
-                </div>
-                
-                <div class="state-item">
-                    <h3>Security Risks</h3>
-                    <p>Systems not properly locked down, <strong>vulnerable to exploitation</strong>. Default configurations, weak passwords, no security auditing. Your assets are at risk from both external threats and insider access.</p>
-                </div>
-                
-                <div class="state-item">
-                    <h3>Staff Overload</h3>
-                    <p><strong>Too many different systems, non-consistent IT hardware</strong>, no single source of knowledge. Staff juggle Square, Resmio, Gmail, network access, multiple logins—operational challenges. You need a unified portal, not five different apps.</p>
-                </div>
-                
-                <div class="state-item connectivity">
-                    <h3>Connectivity Risk</h3>
-                    <p>Any downgrade to standard DSL <strong>kills Fourth, Square payments, and remote CCTV</strong> during service. No 4G backup in Valley locations.</p>
-                    
-                    <div class="dependency-diagram">
-                        <div class="network-center">Network</div>
-                        <div class="dependency-node fourth">Fourth</div>
-                        <div class="dependency-node square">Square</div>
-                        <div class="dependency-node resmio">Resmio</div>
-                        <div class="dependency-node cctv">CCTV</div>
-                        <div class="dependency-node email">Email</div>
-                        <div class="dependency-node phone">Phones</div>
-                    </div>
-                    
-                    <p class="dependency-warning"><strong>When the network fails, everything fails.</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Your Data, Their Way -->
-    <section class="hidden-tax-section">
-        <div class="container">
-            <h2>Your Data, Their Way</h2>
-            <p class="section-intro">SaaS providers give you fixed interfaces. Their layout. Their workflow. You can't change it.</p>
-            
-            <div class="saas-compact-grid">
-                <div class="saas-compact-card">
-                    <h3>The SaaS Prison</h3>
-                    <ul>
-                        <li><strong>Fourth:</strong> Shows you their dashboard, their reports, their metrics</li>
-                        <li><strong>Resmio:</strong> Their booking view, their analytics layout</li>
-                        <li><strong>Square:</strong> Their payment interface, their transaction reports</li>
-                    </ul>
-                    <p>Each vendor locks you into their interface. You access YOUR data THEIR way.</p>
-                </div>
-                
-                <div class="saas-compact-card">
-                    <h3>The Real Problem</h3>
-                    <p>You're juggling 5+ different apps just to see your business. Open Fourth, then Square, then Resmio, then network, then CCTV...</p>
-                    <p><strong>Each window shows you what THEY think you need to see.</strong> Not what YOU actually want.</p>
-                    <p>And you can't bring it together. Can't customize it. Can't see it all in one place.</p>
-                </div>
-                
-                <div class="aywd-compact-promise">
-                    <h3>AYWD's Solution</h3>
-                    <p><strong>We pull YOUR data from their systems using API keys and build the dashboard YOU want.</strong></p>
-                    <p>One unified interface. Show what matters to YOU. Andreas sees different metrics than Blerim. Site managers see their location's data. Kitchen sees kitchen metrics.</p>
-                    <p>Your operational intelligence, your layout, your workflow. We build it your way.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution-Focused Options -->
-    <section class="partnership-model">
-        <div class="container">
-            <h2>Solution-Focused Options</h2>
-            <p class="section-intro">Offering you a partnership, not a vendor relationship!</p>
+            <h2>This is a partnership, not a vendor relationship</h2>
             <div class="partnership-grid">
                 <div class="partnership-point">
-                    <h3 class="partnership-title">Joint R&D</h3>
+                    <h3>Joint R&D</h3>
                     <p>We're building the AYWD platform using Casa Bianca as the proving ground. Both sides benefit from what we learn.</p>
                 </div>
                 <div class="partnership-point">
-                    <h3 class="partnership-title">Portable IP</h3>
+                    <h3>Portable IP</h3>
                     <p>The platform we build together becomes packageable for future clients. You get professional infrastructure, we get validated capability.</p>
                 </div>
                 <div class="partnership-point">
-                    <h3 class="partnership-title">"Use us or not"</h3>
+                    <h3>"Use us or not"</h3>
                     <p>No lock-in. Professional infrastructure any competent technician can maintain. You own your systems, we provide the expertise.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What We're Building Together -->
-    <section id="partnership" class="solution-pillars">
+    <!-- Three Investment Options -->
+    <section id="options" class="options">
         <div class="container">
-            <h2>Introducing Anima di Casa (Soul of the House)</h2>
-            <p class="section-intro">Three integrated layers that work together to transform your operations:</p>
+            <h2>Three Investment Options</h2>
+            <p class="section-intro">Choose your approach based on budget, timeline, and operational priorities.</p>
             
-            <div class="pillars-grid">
-                <!-- Pillar 1: Foundation Infrastructure -->
-                <div class="pillar">
-                    <div class="pillar-header">
-                        <h3>Foundation Infrastructure</h3>
-                        <span class="pillar-tag">Layer 1</span>
+            <div class="options-grid">
+                <!-- Option A: The Foundation -->
+                <article class="option option-foundation">
+                    <div class="option-header">
+                        <span class="option-label">Option A</span>
+                        <h3>The Foundation</h3>
+                        <p class="option-tagline">CCTV where you need it — your system to manage</p>
                     </div>
-                    <p class="pillar-description">Enterprise-grade network, CCTV, and connectivity across all six sites</p>
-                    <ul class="pillar-features">
-                        <li><strong>UniFi Network Platform:</strong> Centralized management, remote diagnostics, PoE cycling</li>
-                        <li><strong>Professional CCTV:</strong> Hikvision/Protect archiving, off-site backup, 24/7 access</li>
-                        <li><strong>Access Control:</strong> UniFi doors/locks, remote management, audit trails</li>
-                        <li><strong>Resilient Connectivity:</strong> 4G failover prevents total network loss</li>
-                    </ul>
-                    <p class="pillar-example"><em>Example: Network issue at Pontypridd? Diagnose and fix from Whitney NOC without leaving your house.</em></p>
-                </div>
+                    
+                    <div class="option-investment">
+                        <span class="investment-amount">£4,800–6,400</span>
+                        <span class="investment-timeline">4-5 weeks</span>
+                    </div>
+                    
+                    <div class="option-content">
+                        <h4>What You Get</h4>
+                        <ul>
+                            <li><strong>CCTV at CBW, CBP, CBU</strong> — Eyes where you currently have blind spots</li>
+                            <li><strong>Hikvision standardization</strong> — All sites on one platform, one app</li>
+                            <li><strong>Equipment spec</strong> — Detailed breakdown you can verify independently</li>
+                            <li><strong>Local recording</strong> — Industry-standard approach</li>
+                        </ul>
+                        
+                        <h4>Delivery Options</h4>
+                        <ul class="solves-list">
+                            <li>You buy equipment, AYWD installs</li>
+                            <li>You buy equipment, share spec with another installer</li>
+                        </ul>
+                        
+                        <h4>Trade-offs</h4>
+                        <ul class="tradeoffs-list">
+                            <li>Local recording only (no off-site backup)</li>
+                            <li>CCTV is your responsibility to manage</li>
+                            <li>No centralized monitoring</li>
+                            <li>No pathway to portal or AI</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="option-footer">
+                        <span class="option-suited">Best for: Quick wins, budget priority, independence</span>
+                    </div>
+                </article>
 
-                <!-- Pillar 2: Operational Intelligence -->
-                <div class="pillar">
-                    <div class="pillar-header">
-                        <h3>Operational Intelligence</h3>
-                        <span class="pillar-tag">Layer 2</span>
+                <!-- Option B: The Professional -->
+                <article class="option option-professional">
+                    <div class="option-header">
+                        <span class="option-label">Option B</span>
+                        <h3>The Professional</h3>
+                        <p class="option-tagline">CCTV + NOC infrastructure — pathway to more</p>
                     </div>
-                    <p class="pillar-description">Unified portal bringing Fourth, Square, Resmio, and all systems together</p>
-                    <ul class="pillar-features">
-                        <li><strong>Single Dashboard:</strong> One place for all operational data, no app juggling</li>
-                        <li><strong>Real-Time Visibility:</strong> See tonight's status from anywhere, any device</li>
-                        <li><strong>API Integrations:</strong> Fourth (finance), Square (payments), Resmio (bookings)</li>
-                        <li><strong>Compliance Automation:</strong> Right-to-work tracking, GDPR retention alerts</li>
-                    </ul>
-                    <p class="pillar-example"><em>Example: "How's Pontypridd doing tonight?" → instant answer showing covers, payments, issues.</em></p>
-                </div>
+                    
+                    <div class="option-investment">
+                        <span class="investment-amount">£7,000–9,500</span>
+                        <span class="investment-timeline">6-8 weeks</span>
+                    </div>
+                    
+                    <div class="option-content">
+                        <h4>Everything in Option A, Plus:</h4>
+                        <ul>
+                            <li><strong>Whitney NOC</strong> — Central infrastructure hub</li>
+                            <li><strong>Network management</strong> — UniFi controller for all sites</li>
+                            <li><strong>Pathway ready</strong> — Infrastructure for Portal → AI (not delivered, but foundation built)</li>
+                            <li><strong>Professional documentation</strong> — Asset mapping across sites</li>
+                        </ul>
+                        
+                        <h4>Delivery Options</h4>
+                        <ul class="solves-list">
+                            <li>You buy equipment, AYWD installs</li>
+                            <li>You buy equipment, share spec with another installer</li>
+                        </ul>
+                        
+                        <h4>Trade-offs</h4>
+                        <ul class="tradeoffs-list">
+                            <li>Local recording only (no off-site backup)</li>
+                            <li>CCTV still your responsibility</li>
+                            <li>No portal or AI delivered (just the pathway)</li>
+                            <li>Hikvision CCTV + UniFi networking (separate platforms)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="option-footer">
+                        <span class="option-suited">Best for: Future-ready foundation, professional infrastructure</span>
+                    </div>
+                </article>
 
-                <!-- Pillar 3: AI Assistants -->
-                <div class="pillar">
-                    <div class="pillar-header">
-                        <h3>AI Assistants (Italian Crew)</h3>
-                        <span class="pillar-tag">Layer 3</span>
+                <!-- Option C: The Platform -->
+                <article class="option option-platform">
+                    <div class="option-ribbon">Partnership Required</div>
+                    <div class="option-header">
+                        <span class="option-label">Option C</span>
+                        <h3>The Platform</h3>
+                        <p class="option-tagline">Different ecosystem — UniFi Protect + Portal + AI</p>
                     </div>
-                    <p class="pillar-description">Seven specialized AI assistants that handle operations, support, and intelligence</p>
-                    <ul class="pillar-features">
-                        <li><strong>Portia (Portal Manager):</strong> Routes questions to the right assistant, manages your unified dashboard</li>
-                        <li><strong>Sofia (Operations):</strong> Procedures, recipes, staff questions, operational guidance 24/7</li>
-                        <li><strong>Giuseppe (Network Tech):</strong> Monitors all sites, alerts on issues, guided troubleshooting</li>
-                        <li><strong>Marco Polo (Intelligence):</strong> Fourth/Square analytics, revenue insights, performance reports</li>
-                        <li><strong>Bella (Customer Relations):</strong> Resmio patterns, feedback synthesis, AI receptionist capability</li>
-                        <li><strong>Marcus Aurelius (Strategy):</strong> Big picture thinking, strategic decisions, expansion planning</li>
-                        <li><strong>Janus (Security):</strong> CCTV integration, incident patterns, threat assessment</li>
-                    </ul>
-                    <p class="pillar-example"><em>Example: Staff member asks "How do I handle refund?" → Sofia provides step-by-step procedure.</em></p>
-                </div>
+                    
+                    <div class="option-investment">
+                        <span class="investment-amount">£11,000–13,000</span>
+                        <span class="investment-timeline">12 weeks (phased)</span>
+                    </div>
+                    
+                    <div class="option-content">
+                        <h4>What You Get (Different Approach)</h4>
+                        <ul>
+                            <li><strong>UniFi Protect</strong> — Single ecosystem (not Hikvision)</li>
+                            <li><strong>Protect Archiving</strong> — Off-site backup that actually works</li>
+                            <li><strong>Owner's Portal</strong> — Fourth, Square, Resmio data in one place</li>
+                            <li><strong>Passive AI</strong> — Built collaboratively with you (automated reports, silent partner)</li>
+                            <li><strong>Whitney NOC</strong> — Central hub with NAS for archiving</li>
+                        </ul>
+                        
+                        <h4>What This Requires</h4>
+                        <ul class="solves-list">
+                            <li>Partnership with AYWD (can't hand spec to another installer)</li>
+                            <li>Collaboration on what the AI does</li>
+                            <li>12-week timeline commitment</li>
+                        </ul>
+                        
+                        <h4>What You Don't Get</h4>
+                        <ul class="tradeoffs-list">
+                            <li>NOT a finished product — we build this together</li>
+                            <li>NOT 7 AI agents on day one — iterative development</li>
+                            <li>NOT Hikvision — different ecosystem choice</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="option-footer">
+                        <span class="option-suited">Best for: Operational transformation, long-term partnership</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- ROI Snapshot -->
-    <section class="roi-snapshot">
+    <!-- Why It Matters -->
+    <section id="why" class="why">
         <div class="container">
-            <div class="roi-box">
-                <h2 class="roi-title">The Financial Reality</h2>
-                <div class="roi-grid">
-                    <div class="roi-item">
-                        <span class="roi-number">£300,000+</span>
-                        <span class="roi-label">5-year operational savings</span>
+            <h2>Why This Matters Now</h2>
+            
+            <div class="why-grid">
+                <article class="why-item">
+                    <div class="why-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #dc2626, #991b1b);">
+                            <span>Connectivity Reality</span>
+                        </div>
                     </div>
-                    <div class="roi-item">
-                        <span class="roi-number">560-635%</span>
-                        <span class="roi-label">Year 1 ROI (Option C)</span>
+                    <div class="why-content">
+                        <h3>Your operations depend on connectivity</h3>
+                        <p>Fourth, Square, Resmio, CCTV — all need quality internet. When connectivity fails:</p>
+                        <ul>
+                            <li>Payment failures during service</li>
+                            <li>Fourth delays when you're busiest</li>
+                            <li>Unable to view CCTV remotely</li>
+                            <li>Staff frustration with slow systems</li>
+                            <li><strong>No 4G backup in Valley locations</strong> (poor mobile coverage)</li>
+                        </ul>
+                        <p class="why-emphasis">Bottom line: If internet goes down during dinner service, operations grind to a halt.</p>
                     </div>
-                    <div class="roi-item">
-                        <span class="roi-number">&lt;1 year</span>
-                        <span class="roi-label">Payback period</span>
+                </article>
+
+                <article class="why-item">
+                    <div class="why-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ea580c, #c2410c);">
+                            <span>Recording Reality</span>
+                        </div>
                     </div>
-                    <div class="roi-item">
-                        <span class="roi-number">£70k/year</span>
-                        <span class="roi-label">Staff cost replacement</span>
+                    <div class="why-content">
+                        <h3>Local-only recording has real consequences</h3>
+                        <p>Options A and B record locally. This is industry-standard, but understand the trade-offs:</p>
+                        <ul>
+                            <li><strong>Fire:</strong> NVR destroyed, footage gone</li>
+                            <li><strong>Theft:</strong> NVR stolen, footage gone</li>
+                            <li><strong>Flood:</strong> Drives corrupted, footage gone</li>
+                            <li><strong>Equipment failure:</strong> Drive failure, footage gone</li>
+                        </ul>
+                        <p class="why-emphasis">Option C addresses this with UniFi Protect Archiving — off-site backup that actually works.</p>
                     </div>
-                </div>
-                <p class="roi-note">Based on Option C investment (£11,061-12,511 equipment). Platform development included at no cost through partnership model.</p>
+                </article>
+
+                <article class="why-item">
+                    <div class="why-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #059669, #047857);">
+                            <span>Operational Reality</span>
+                        </div>
+                    </div>
+                    <div class="why-content">
+                        <h3>Six sites, separate systems, no central visibility</h3>
+                        <p>Fourth, Square, Resmio, CCTV, network — all separate. All requiring different logins, different apps, different management.</p>
+                        <ul>
+                            <li>Can't see what's happening without physical visits</li>
+                            <li>Issues discovered when already impacting service</li>
+                            <li>No early warning system</li>
+                            <li>No unified view of operations</li>
+                        </ul>
+                        <p class="why-emphasis">Option C brings these together with a Portal and passive AI support.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
+    <!-- Timeline -->
+    <section id="timeline" class="timeline">
         <div class="container">
-            <h2>Three Investment Options to Choose From</h2>
-            <p class="cta-conclusion">Each option builds on the previous, giving you flexibility based on priorities, timeline, and budget.</p>
-            <div class="cta-buttons">
-                <a href="summary.html" class="cta-button cta-primary">View Investment Options</a>
-                <a href="#contact" class="cta-button cta-secondary">Schedule Discussion</a>
+            <h2>Timeline & Approach</h2>
+            
+            <div class="timeline-constraint">
+                <div class="constraint-content">
+                    <h3>12-Week Execution Window</h3>
+                    <p>Hard deadline: March 2026 (seasonal commitments begin). Options A and B can be delivered faster. Option C requires the full window.</p>
+                </div>
+            </div>
+
+            <div class="timeline-phases">
+                <div class="phase">
+                    <span class="phase-number">Option A</span>
+                    <h3>4-5 Weeks</h3>
+                    <p>CCTV installation at CBW, CBP, CBU. Hikvision standardization. Your system to manage.</p>
+                </div>
+
+                <div class="phase">
+                    <span class="phase-number">Option B</span>
+                    <h3>6-8 Weeks</h3>
+                    <p>Option A + Whitney NOC infrastructure. Network management foundation. Pathway ready for future development.</p>
+                </div>
+
+                <div class="phase">
+                    <span class="phase-number">Option C</span>
+                    <h3>12 Weeks</h3>
+                    <p>UniFi Protect ecosystem. Protect Archiving. Owner's Portal. Passive AI built collaboratively.</p>
+                </div>
+            </div>
+
+            <div class="timeline-note">
+                <p><strong>Options A & B:</strong> You can take the spec to another installer if preferred.</p>
+                <p><strong>Option C:</strong> Requires AYWD partnership — we build this together.</p>
             </div>
         </div>
     </section>
@@ -259,33 +310,33 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Let's Discuss</h2>
-            <p class="contact-intro">These options are starting points for conversation, not final prices. Let's walk through what makes sense for Casa Bianca's priorities, timeline, and budget.</p>
+            <p class="contact-intro">These options are starting points for conversation. Let's work out what makes sense for Casa Bianca.</p>
             
             <div class="contact-grid">
                 <div class="contact-option">
                     <h3>Questions to consider:</h3>
                     <ul>
-                        <li>Which sites are highest priority for visibility?</li>
-                        <li>What's the cash flow reality for next 12 weeks?</li>
-                        <li>Is off-site backup worth the investment?</li>
-                        <li>Do we want to solve just CCTV, or build the full platform?</li>
-                        <li>What's Andreas's vision vs Blerim's financial comfort zone?</li>
+                        <li>Which sites are highest priority?</li>
+                        <li>What's the budget reality?</li>
+                        <li>Do you want AYWD involved, or prefer independence?</li>
+                        <li>Is off-site backup important? (Option C only)</li>
+                        <li>Do you want to explore Portal and AI? (Option C only)</li>
                     </ul>
                 </div>
 
                 <div class="contact-cta">
                     <h3>Ready to discuss?</h3>
-                    <p>Let's schedule a conversation to walk through the options, answer questions, and determine the right path forward.</p>
+                    <p>Let's talk through the options and work out the right path.</p>
                     <div class="contact-details">
                         <a href="tel:+447500834556" class="btn btn-primary">Call 07500 834556</a>
                         <span class="contact-or">or</span>
-                        <p class="contact-email">Respond to this proposal and let's set up a time to talk through it properly.</p>
+                        <p class="contact-email">Respond to this proposal and let's set up a conversation.</p>
                     </div>
                 </div>
             </div>
 
             <div class="contact-footer">
-                <p class="footer-note"><strong>Remember:</strong> This is a partnership pilot. We're building the AYWD platform together, and both sides benefit from what we create. No pressure, no lock-in. You use us or not — your choice.</p>
+                <p class="footer-note"><strong>Remember:</strong> Options A & B — you can use us or not. Option C — partnership required.</p>
             </div>
         </div>
     </section>
