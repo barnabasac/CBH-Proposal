@@ -613,6 +613,13 @@
     color: white;
 }
 
+.vision-section h2,
+.vision-section h3,
+.vision-section p,
+.vision-section li {
+    color: white;
+}
+
 .vision-header {
     text-align: center;
     margin-bottom: 64px;
@@ -627,6 +634,64 @@
 .vision-intro {
     font-size: 1.25rem;
     opacity: 0.9;
+}
+
+/* Vision grid cards - WHITE backgrounds */
+.vision-section .portal-grid,
+.vision-section .ai-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.vision-section .portal-card,
+.vision-section .ai-card {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.vision-section .portal-card h4,
+.vision-section .ai-card h4 {
+    color: #009246;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.vision-section .portal-card p,
+.vision-section .ai-card p {
+    color: var(--text-secondary);
+}
+
+/* What This Is NOT box */
+.vision-section .not-box {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    margin-top: 48px;
+}
+
+.vision-section .not-box h3 {
+    color: var(--primary-red);
+    margin-bottom: 16px;
+}
+
+.vision-section .not-box p {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.vision-section .not-box strong {
+    color: var(--primary-red);
+}
+
+@media (max-width: 768px) {
+    .vision-section .portal-grid,
+    .vision-section .ai-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* === AI Crew === */
