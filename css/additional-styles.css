@@ -960,3 +960,24 @@
         padding: 12px 8px;
     }
 }
+
+/* Option Card Links */
+.option-link {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: var(--accent-gold);
+    color: var(--bg-dark);
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.option-link:hover {
+    background: var(--warm-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
